@@ -1886,7 +1886,7 @@ main (int argc, char** argv)
   if (manager_address_string_unix == NULL)
     {
       if (manager_address_string || manager_address_string_2)
-        use_tls = 1;
+        use_tls = 0;
       else
         {
           use_tls = 0;
