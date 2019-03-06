@@ -402,7 +402,7 @@ watch_client_connection (void* data)
 
       ret = recv (client_connection->socket, buf, 1, MSG_PEEK);
 
-      if (ret >= 0)
+      if (ret < 0)
         {
           if (watcher_data->connection_closed == 0)
             {
